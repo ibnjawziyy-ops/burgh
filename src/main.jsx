@@ -5,6 +5,7 @@ import './styles.css'
 const EMAIL = 'mustaphakadri@yahoo.co.uk'
 const PHONE = '08038493510'
 const WHATSAPP = 'https://wa.me/2348038493510'
+const ASSET_BASE = import.meta.env.BASE_URL
 
 const navItems = [
   { path: '/', label: 'Home' },
@@ -162,8 +163,8 @@ function Home() {
     </section>
 
     <section className="container division-cards" aria-label="Business divisions">
-      <SplitCard type="homes" index="1" title="A better place to call home." copy="Residential property sales and homeownership opportunities shaped around real needs, preferences and budgets." image="/assets/burgh-homes.jpg" path="/homes" />
-      <SplitCard type="energy" index="2" title="Powering today's needs. Enabling tomorrow's energy." copy="Dependable downstream energy and renewable solutions for an evolving world." image="/assets/burgh-energy.jpg" path="/energy" />
+      <SplitCard type="homes" index="1" title="A better place to call home." copy="Residential property sales and homeownership opportunities shaped around real needs, preferences and budgets." image={`${ASSET_BASE}assets/burgh-homes.jpg`} path="/homes" />
+      <SplitCard type="energy" index="2" title="Powering today's needs. Enabling tomorrow's energy." copy="Dependable downstream energy and renewable solutions for an evolving world." image={`${ASSET_BASE}assets/burgh-energy.jpg`} path="/energy" />
     </section>
 
     <Values />
