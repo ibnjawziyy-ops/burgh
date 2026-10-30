@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "path": "/", "title": "BURGH — Home" },
+    { "path": "/about", "title": "About BURGH" },
+    { "path": "/homes", "title": "BURGH HOMES" },
+    { "path": "/energy", "title": "BURGH ENERGY" },
+    { "path": "/contact", "title": "Contact BURGH" }
+  ]
+}
